@@ -1,0 +1,41 @@
+﻿@model IEnumerable<HangfireDemo.Models.AppRecord>
+
+@{
+    ViewData["Title"] = "Records";
+}
+
+<div class="container my-4">
+    <div class="d-flex justify-content-between mb-3">
+        <h2>Records</h2>
+        <div>
+            <a asp-action="Create" class="btn btn-primary">New Record</a>
+            <a href="/hangfire" class="btn btn-outline-secondary ms-2" target="_blank">
+                Hangfire Dashboard
+            </a>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Created At (UTC)</th>
+                <th>Expiry Date (UTC)</th>
+                <th>Is Expired?</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var r in Model)
+            {
+                <tr class="@(r.IsExpired ? "table-warning" : "")">
+                    <td>@r.Id</td>
+                    <td>@r.Title</td>
+                    <td>@r.CreatedAt</td>
+                    <td>@r.ExpiryDate</td>
+                    <td>@(r.IsExpired ? "Yes" : "No")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

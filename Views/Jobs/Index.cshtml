@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Background Jobs";
+}
+
+<div class="container mt-5">
+
+    <h2 class="mb-4 fw-bold">Manual Job Runner</h2>
+
+    @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["msg"]
+        </div>
+    }
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+
+            <p class="text-muted mb-4">
+                Use the buttons below to manually trigger Hangfire background jobs.
+            </p>
+
+            <div class="row g-3">
+
+                <!-- Daily Summary Email -->
+                <div class="col-md-4">
+                    <form asp-action="RunDailySummary" method="post">
+                        <button class="btn btn-primary w-100">
+                            <i class="bi bi-envelope-fill me-1"></i>
+                            Run Daily Summary Email
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Expire Old Records -->
+                <div class="col-md-4">
+                    <form asp-action="RunRecordExpiry" method="post">
+                        <button class="btn btn-warning w-100">
+                            <i class="bi bi-clock-history me-1"></i>
+                            Run Auto Expire Records
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Cleanup DB -->
+                <div class="col-md-4">
+                    <form asp-action="RunDbCleanup" method="post">
+                        <button class="btn btn-danger w-100">
+                            <i class="bi bi-trash-fill me-1"></i>
+                            Run DB Cleanup
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="my-4" />
+
+            <a href="/hangfire" class="btn btn-dark" target="_blank">
+                Open Hangfire Dashboard
+            </a>
+
+        </div>
+    </div>
+</div>
