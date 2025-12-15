@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\ASP.NET\\HangfireDemo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8D7DCB7D-CB45-42F1-9199-5A9E328A78E4}|HangfireDemo.csproj|d:\\asp.net\\hangfiredemo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8D7DCB7D-CB45-42F1-9199-5A9E328A78E4}|HangfireDemo.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8D7DCB7D-CB45-42F1-9199-5A9E328A78E4}|HangfireDemo.csproj|d:\\asp.net\\hangfiredemo\\documentation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{8D7DCB7D-CB45-42F1-9199-5A9E328A78E4}|HangfireDemo.csproj|solutionrelative:documentation.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
@@ -38,24 +42,41 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ASP.NET\\HangfireDemo\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\ASP.NET\\HangfireDemo\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-15T10:18:16.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "documentation.md",
               "DocumentMoniker": "D:\\ASP.NET\\HangfireDemo\\documentation.md",
               "RelativeDocumentMoniker": "documentation.md",
               "ToolTip": "D:\\ASP.NET\\HangfireDemo\\documentation.md",
               "RelativeToolTip": "documentation.md",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGkAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGwAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2025-12-05T09:05:05.53Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }
